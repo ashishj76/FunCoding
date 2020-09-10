@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+
 
 namespace FunCoding
 {
@@ -6,7 +9,8 @@ namespace FunCoding
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var fizbuzz = new FizzBuzz();
+            fizbuzz.Fizzbuzz(5);
         }
     }
 }
