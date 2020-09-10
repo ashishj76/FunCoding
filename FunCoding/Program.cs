@@ -11,6 +11,7 @@ namespace FunCoding
         {
             CallFizzBuzz();
             CallPalindrome();
+            CallFindMissingNumber();
         }
 
         private static void CallFizzBuzz()
@@ -23,6 +24,12 @@ namespace FunCoding
         {
             var obj = new Palindrome();
             obj.Execute("313");
+        }
+
+        private static void CallFindMissingNumber()
+        {
+            var obj = new FindMissingNumber();
+            obj.Execute(new List<int>() { 3,7,1,2,8,4,5});
         }
     }
 }
