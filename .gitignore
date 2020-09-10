@@ -3,3 +3,16 @@
 ################################################################################
 
 /FunCoding/obj/project.nuget.cache
+/FunCoding/obj/project.assets.json
+/FunCoding/obj/FunCoding.csproj.nuget.g.targets
+/FunCoding/obj/FunCoding.csproj.nuget.g.props
+/FunCoding/obj/FunCoding.csproj.nuget.dgspec.json
+/FunCoding/obj/Debug/netcoreapp3.1/FunCoding.csprojAssemblyReference.cache
+/FunCoding/obj/Debug/netcoreapp3.1/FunCoding.assets.cache
+/FunCoding/obj/Debug/netcoreapp3.1/FunCoding.AssemblyInfoInputs.cache
+/FunCoding/obj/Debug/netcoreapp3.1/FunCoding.AssemblyInfo.cs
+/FunCoding/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+/.vs/FunCoding/v16/.suo
