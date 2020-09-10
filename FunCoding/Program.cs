@@ -9,11 +9,19 @@ namespace FunCoding
     {
         static void Main(string[] args)
         {
+            CallBubbleSort(new int[] { 3, 7, 1, 2, 8, 4, 5 });
             CallMergeSortedList();
             CallSumOfTwoIntegers();
             CallFizzBuzz(5);
             CallPalindrome("313");
             CallFindMissingNumber(new List<int>() { 3, 7, 1, 2, 8, 4, 5 });
+        }
+
+        private static void CallBubbleSort(int[] input)
+        {
+            Console.WriteLine("---BubbleSort---\n");
+            var obj = new BubbleSort();
+            obj.Execute(input);
         }
 
         private static void CallFizzBuzz(int input)
