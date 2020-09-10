@@ -11,19 +11,18 @@ namespace FunCoding
             var ret = new List<String> ();
             int begin = 0;
             int end = s.Length - 1;
-            bool result = true;
-            while(true)
+            while (true)
             {
                 if (begin > end)
                 {
-                    Console.Write("string is palindrome");
+                    Console.Write("{0} is palindrome\n",s);
                     break;
                 }
                 char a = s[begin];
                 char b = s[end];
                 if(char.ToLower(a)!= char.ToLower(b))
                 {
-                    Console.Write("string is not palindrome");
+                    Console.Write("{0} is not palindrome", s);
                     break;
                 }
                 begin++;

@@ -15,7 +15,7 @@ namespace FunCoding
             int total = input.AsQueryable().Sum();
             int length = input.Count()+1;
             int originalTotal = (length * (length + 1)) / 2;
-            Console.WriteLine("Missing Number is : " + (originalTotal - total).ToString());
+            Console.WriteLine("Missing Number is :{0} \n" ,(originalTotal - total).ToString());
         }
     }
 }

@@ -11,38 +11,42 @@ namespace FunCoding
         {
             CallMergeSortedList();
             CallSumOfTwoIntegers();
-            CallFizzBuzz();
-            CallPalindrome();
-            CallFindMissingNumber();
+            CallFizzBuzz(5);
+            CallPalindrome("313");
+            CallFindMissingNumber(new List<int>() { 3, 7, 1, 2, 8, 4, 5 });
         }
 
-        private static void CallFizzBuzz()
+        private static void CallFizzBuzz(int input)
         {
+            Console.WriteLine("---FizzBuzz---\n");
             var obj = new FizzBuzz();
-            obj.Execute(5);
+            obj.Execute(input);
         }
 
-        private static void CallPalindrome()
+        private static void CallPalindrome(string s)
         {
+            Console.WriteLine("---Palindrome---\n");
             var obj = new Palindrome();
-            obj.Execute("313");
+            obj.Execute(s);
         }
 
-        private static void CallFindMissingNumber()
+        private static void CallFindMissingNumber(List<int> input)
         {
+            Console.WriteLine("---Find Missing Number---\n");
             var obj = new FindMissingNumber();
-            obj.Execute(new List<int>() { 3,7,1,2,8,4,5});
+            obj.Execute(input);
         }
 
         private static void CallSumOfTwoIntegers()
         {
+            Console.WriteLine("---Sum of To Integers---\n");
             var obj = new SumOfTwoIntegers();
             obj.Execute(new List<int>() { 5, 7, 1, 2, 8, 4, 3 }, 10);
         }
 
         private static void CallMergeSortedList()
         {
-            
+            Console.WriteLine("---Merge Sorted List---\n");
             var l1 = new MergeSortedLinkedList.LinkedList();
             l1.Add(new MergeSortedLinkedList.Node("3"));
             l1.Add(new MergeSortedLinkedList.Node("5"));

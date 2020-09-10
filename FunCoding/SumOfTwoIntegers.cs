@@ -16,7 +16,7 @@ namespace FunCoding
                         {
                             if (i!=j && (i + j) == sum)
                             {
-                                Console.WriteLine("sum of {0} and {1} is {2}", i.ToString(), j.ToString(), sum.ToString());
+                                Console.WriteLine("sum of {0} and {1} is {2}\n", i.ToString(), j.ToString(), sum.ToString());
                             }
                         }) );
         }
