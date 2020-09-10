@@ -9,8 +9,20 @@ namespace FunCoding
     {
         static void Main(string[] args)
         {
-            var fizbuzz = new FizzBuzz();
-            fizbuzz.Fizzbuzz(5);
+            CallFizzBuzz();
+            CallPalindrome();
+        }
+
+        private static void CallFizzBuzz()
+        {
+            var obj = new FizzBuzz();
+            obj.Execute(5);
+        }
+
+        private static void CallPalindrome()
+        {
+            var obj = new Palindrome();
+            obj.Execute("313");
         }
     }
 }

@@ -6,7 +6,7 @@ namespace FunCoding
 {
     class FizzBuzz
     {
-        public void Fizzbuzz(int num)
+        public void Execute(int num)
         {
             var ret = new List<String> ();
             int i = 1;
