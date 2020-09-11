@@ -9,50 +9,70 @@ namespace FunCoding
     {
         static void Main(string[] args)
         {
-            CallBubbleSort(new int[] { 3, 7, 1, 2, 8, 4, 5 });
-            CallMergeSortedList();
-            CallSumOfTwoIntegers();
-            CallFizzBuzz(5);
-            CallPalindrome("313");
-            CallFindMissingNumber(new List<int>() { 3, 7, 1, 2, 8, 4, 5 });
+            CallSingleton();
+            StringSegmentation();
+            BubbleSort(new int[] { 3, 7, 1, 2, 8, 4, 5 });
+            MergeSortedList();
+            SumOfTwoIntegers();
+            FizzBuzz(5);
+            Palindrome("313");
+            FindMissingNumber(new List<int>() { 3, 7, 1, 2, 8, 4, 5 });
         }
 
-        private static void CallBubbleSort(int[] input)
+        private static void CallSingleton()
+        {
+            Console.WriteLine("---Singleton pattern---\n");
+            Singleton.Instance.printMessage();
+            Singleton.Instance.printMessage();
+        }
+        private static void StringSegmentation()
+        {
+            Console.WriteLine("---String Segmentation---\n");
+            var obj = new StringSegmentation();
+            var input = "apple pie1";
+            var hash = new HashSet<string>();
+            hash.Add("apple");
+            hash.Add("pear");
+            hash.Add("pie");
+            obj.Execute(input,hash);
+        }
+
+        private static void BubbleSort(int[] input)
         {
             Console.WriteLine("---BubbleSort---\n");
             var obj = new BubbleSort();
             obj.Execute(input);
         }
 
-        private static void CallFizzBuzz(int input)
+        private static void FizzBuzz(int input)
         {
             Console.WriteLine("---FizzBuzz---\n");
             var obj = new FizzBuzz();
             obj.Execute(input);
         }
 
-        private static void CallPalindrome(string s)
+        private static void Palindrome(string s)
         {
             Console.WriteLine("---Palindrome---\n");
             var obj = new Palindrome();
             obj.Execute(s);
         }
 
-        private static void CallFindMissingNumber(List<int> input)
+        private static void FindMissingNumber(List<int> input)
         {
             Console.WriteLine("---Find Missing Number---\n");
             var obj = new FindMissingNumber();
             obj.Execute(input);
         }
 
-        private static void CallSumOfTwoIntegers()
+        private static void SumOfTwoIntegers()
         {
             Console.WriteLine("---Sum of To Integers---\n");
             var obj = new SumOfTwoIntegers();
             obj.Execute(new List<int>() { 5, 7, 1, 2, 8, 4, 3 }, 10);
         }
 
-        private static void CallMergeSortedList()
+        private static void MergeSortedList()
         {
             Console.WriteLine("---Merge Sorted List---\n");
             var l1 = new MergeSortedLinkedList.LinkedList();
