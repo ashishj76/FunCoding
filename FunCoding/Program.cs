@@ -9,6 +9,7 @@ namespace FunCoding
     {
         static void Main(string[] args)
         {
+            ReverseString();
             CallSingleton();
             StringSegmentation();
             BubbleSort(new int[] { 3, 7, 1, 2, 8, 4, 5 });
@@ -19,6 +20,12 @@ namespace FunCoding
             FindMissingNumber(new List<int>() { 3, 7, 1, 2, 8, 4, 5 });
         }
 
+        private static void ReverseString()
+        {
+            Console.WriteLine("---ReverseString ---\n");
+            var obj = new ReverseString();
+            obj.Execute("This is the reverse string");
+        }
         private static void CallSingleton()
         {
             Console.WriteLine("---Singleton pattern---\n");
