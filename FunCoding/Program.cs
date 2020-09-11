@@ -9,6 +9,8 @@ namespace FunCoding
     {
         static void Main(string[] args)
         {
+            Permutation();
+            CountCoins();
             ReverseString();
             CallSingleton();
             StringSegmentation();
@@ -20,6 +22,18 @@ namespace FunCoding
             FindMissingNumber(new List<int>() { 3, 7, 1, 2, 8, 4, 5 });
         }
 
+        private static void Permutation()
+        {
+            Console.WriteLine("---Kth Permutation---\n");
+            var obj = new Permutation();
+            obj.Execute("abcd");
+        }
+        private static void CountCoins()
+        {
+            Console.WriteLine("---Count Coins ---\n");
+            var obj = new CountCoins();
+            obj.Execute(new int[] {1,2,5 }, 7);
+        }
         private static void ReverseString()
         {
             Console.WriteLine("---ReverseString ---\n");
