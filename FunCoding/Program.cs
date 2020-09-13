@@ -9,6 +9,7 @@ namespace FunCoding
     {
         static void Main(string[] args)
         {
+            Polymorphism();
             Permutation();
             CountCoins();
             ReverseString();
@@ -20,6 +21,17 @@ namespace FunCoding
             FizzBuzz(5);
             Palindrome("313");
             FindMissingNumber(new List<int>() { 3, 7, 1, 2, 8, 4, 5 });
+        }
+
+        private static void Polymorphism()
+        {
+            Console.WriteLine("---Polymorphism---\n");
+            var animal = new Polymorphism.Animal();
+            var dog = new Polymorphism.Dog();
+            var cat = new Polymorphism.Cat();
+            animal.AnimalMakeSound();
+            dog.AnimalMakeSound();
+            cat.AnimalMakeSound();
         }
 
         private static void Permutation()
