@@ -9,6 +9,7 @@ namespace FunCoding
     {
         static void Main(string[] args)
         {
+            FirstAndLastOccurence();
             ProtoTypePattern();
             BuilderPattern();
             FactoryPattern();
@@ -24,6 +25,13 @@ namespace FunCoding
             FizzBuzz(5);
             Palindrome("313");
             FindMissingNumber(new List<int>() { 3, 7, 1, 2, 8, 4, 5 });
+        }
+
+        private static void FirstAndLastOccurence()
+        {
+            var obj = new FirstAndLastOccurence();
+            int[] arr = { 1, 3, 5, 5, 5, 5, 7, 123, 125 };
+            obj.Execute(arr, 1);
         }
 
         private static void ProtoTypePattern()
