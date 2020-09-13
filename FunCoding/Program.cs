@@ -9,6 +9,7 @@ namespace FunCoding
     {
         static void Main(string[] args)
         {
+            FactoryPattern();
             Polymorphism();
             Permutation();
             CountCoins();
@@ -21,6 +22,17 @@ namespace FunCoding
             FizzBuzz(5);
             Palindrome("313");
             FindMissingNumber(new List<int>() { 3, 7, 1, 2, 8, 4, 5 });
+        }
+
+        private static void FactoryPattern()
+        {
+            Console.WriteLine("---Factory Pattern---\n");
+            var factory = new FactoryPattern.ConcreteFactory();
+            var scooter = factory.GetVehicle("Scooter");
+            scooter.Drive(100);
+
+            var bike = factory.GetVehicle("Bike");
+            bike.Drive(10);
         }
 
         private static void Polymorphism()
