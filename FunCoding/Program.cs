@@ -9,6 +9,7 @@ namespace FunCoding
     {
         static void Main(string[] args)
         {
+            ProtoTypePattern();
             BuilderPattern();
             FactoryPattern();
             Polymorphism();
@@ -23,6 +24,20 @@ namespace FunCoding
             FizzBuzz(5);
             Palindrome("313");
             FindMissingNumber(new List<int>() { 3, 7, 1, 2, 8, 4, 5 });
+        }
+
+        private static void ProtoTypePattern()
+        {
+            Console.WriteLine("---Prototype Pattern---\n");
+            var cust1 = new PrototypePattern.Customer();
+            cust1.firstName = "Customer1 FirstName";
+            cust1.lastName = "Customer1 LastName";
+            var cust2 = cust1.getClone();
+
+            Console.WriteLine("Custoomer 1 FirstName: {0}", cust1.firstName);
+            Console.WriteLine("Custoomer 1 LastName: {0}", cust1.lastName);
+            Console.WriteLine("Custoomer 2 FirstName: {0}",cust2.firstName);
+            Console.WriteLine("Custoomer 2 LastName: {0}", cust2.lastName);
         }
 
         private static void BuilderPattern()
